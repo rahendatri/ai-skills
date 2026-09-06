@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Market/Industry] Research Report</title>
+<style>
+  :root {
+    --paper: #F8F7F2;
+    --ink: #1E1D1A;
+    --ink-soft: #56534B;
+    --rule: #DAD6C9;
+    --accent: #2F5A50;
+    --accent-soft: #E7EEE9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif;
+    line-height: 1.65;
+  }
+  .page {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  .masthead {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  .masthead .scope {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    color: var(--ink-soft);
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-size: 34px;
+    line-height: 1.2;
+    margin: 0;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 21px;
+    margin: 48px 0 16px;
+    padding-top: 4px;
+    border-top: 1px solid var(--rule);
+    padding-top: 20px;
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p { max-width: 68ch; margin: 0 0 16px; }
+  ul, ol { max-width: 68ch; padding-left: 22px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
+  a:hover { opacity: 0.75; }
+  .cite { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 0.8em; border-bottom: none; }
+
+  .opportunity {
+    margin: 48px 0;
+    padding: 28px 32px;
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+  }
+  .opportunity h2 {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 15px;
+    text-transform: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+  .opportunity p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    max-width: none;
+  }
+
+  table.sources {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  table.sources th, table.sources td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  table.sources th {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ink-soft);
+    font-weight: 600;
+    border-bottom: 2px solid var(--ink);
+  }
+  table.sources td:first-child { color: var(--ink); }
+
+  .stat-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 8px 0 20px;
+  }
+  .stat-card {
+    flex: 1 1 160px;
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--accent);
+    padding: 16px 18px;
+  }
+  .stat-card .value {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+  .stat-card .label {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    margin-bottom: 8px;
+  }
+  .stat-card .cite { font-size: 11px; }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 12px;
+    color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="masthead">
+    <div class="scope">[Geography/segment/time window] &middot; Prepared [date]</div>
+    <h1>[Market/Industry] Research Report</h1>
+  </div>
+
+  <h2>Executive Summary</h2>
+  <p>[2-4 sentences: the headline picture, the single most important takeaway, and the most significant unmet gap.]</p>
+
+  <h2>Market Sizing &amp; Growth</h2>
+  <div class="stat-row">
+    <div class="stat-card">
+      <div class="label">[Market size, current year]</div>
+      <div class="value">$[X]B</div>
+      <a class="cite" href="https://example.com/source-1" target="_blank" rel="noopener">(Publisher, Year — location)</a>
+    </div>
+    <div class="stat-card">
+      <div class="label">[CAGR / growth rate]</div>
+      <div class="value">[X]%</div>
+      <a class="cite" href="https://example.com/source-1" target="_blank" rel="noopener">(Publisher, Year — location)</a>
+    </div>
+    <div class="stat-card">
+      <div class="label">[Key segment or region share]</div>
+      <div class="value">[X]%</div>
+      <a class="cite" href="https://example.com/source-3" target="_blank" rel="noopener">(Publisher, Year — location)</a>
+    </div>
+  </div>
+  <p>[1-3 sentences max: what's driving the range, or what's genuinely disputed — only the context the cards above can't carry on their own.]</p>
+
+  <h2>Demand Drivers &amp; Trends</h2>
+  <ul>
+    <li><strong>[Driver name]:</strong> [description] <a class="cite" href="https://example.com/source-2" target="_blank" rel="noopener">(Publisher, Year — location)</a></li>
+  </ul>
+
+  <h2>Competitive Landscape</h2>
+  <ul>
+    <li><strong>[Company]:</strong> [positioning, recent moves] <a class="cite" href="https://example.com/source-3" target="_blank" rel="noopener">(Publisher, Year — location)</a></li>
+  </ul>
+
+  <h2>Unmet Market Gaps</h2>
+  <ul>
+    <li><strong>[Gap]:</strong> [description — cite if source-stated, mark "(synthesis)" if inferred]</li>
+  </ul>
+
+  <h2>Regulatory &amp; Risk Factors</h2>
+  <ul>
+    <li>[Deadline, rule, or contested point] <a class="cite" href="https://example.com/source-4" target="_blank" rel="noopener">(Publisher, Year — location)</a></li>
+  </ul>
+
+  <div class="opportunity">
+    <h2>The Opportunity</h2>
+    <p>[One punchy, evidence-grounded sentence — the biggest gap, sharpened.]</p>
+  </div>
+
+  <h2>Sources</h2>
+  <table class="sources">
+    <thead>
+      <tr><th>Source</th><th>Publisher &amp; Date</th><th>Link</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>[Full Title of Source]</td>
+        <td>[Publisher], [Month Year]</td>
+        <td><a href="https://example.com/source-1" target="_blank" rel="noopener">Open source</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer>Every inline citation links directly to its source. This table lists every source used, deduplicated, for at-a-glance completeness — the grounding excerpt and its location within each source live inline with the citation in the body above.</footer>
+
+</div>
+</body>
+</html>
