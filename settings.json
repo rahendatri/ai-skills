@@ -1,20 +1,28 @@
 /* Claude CLI settings (~/.claude/settings.json) */
 {
-    "cleanupPeriodDays": 7,
-    "env": {
-        "DISABLE_TELEMETRY": "1",
-        "DO_NOT_TRACK": "true",
-        "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "true"
-    },
-    "model": "claude-opus-5",
-    "enableArtifact": false,
-    "modelSettings": {
-        "claude-opus-5": {
-            "autoCompactWindow": 400000
-        }
-    },
-    "spellCheck": {
-        "enabled": true
-    },
-    "tui": "fullscreen"
+  "cleanupPeriodDays": 7,
+  "env": {
+    "DISABLE_TELEMETRY": "1",
+    "DO_NOT_TRACK": "true",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "true"
+  },
+  "model": "claude-opus-5",
+  "enableArtifact": false,
+  "modelSettings": {
+    "claude-opus-5": {
+      "autoCompactWindow": 400000
+    }
+  },
+  "spellCheck": {
+    "enabled": true
+  },
+  "tui": "fullscreen",
+  "permissions": {
+    "allow": [
+     "WebFetch", 
+     "WebSearch",
+     "Read(//tmp/**)",
+     "Read(tmp/**)"
+    ]
+  }
 }
